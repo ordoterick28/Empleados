@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    layout_marginLeft
+    <!-- hdpi_activityMain / activity_main -->
+    <dimen name="activityMain_margin_hdpi">5dp</dimen>
+    <!-- layout-normal-hdpi / activity_main -->
+    <dimen name="hdpi_activityMain_textSize">15sp</dimen>
+    <!-- layout-normal-xxhdpi / activity_main -->
+    <dimen name="activityMain_textSize">21sp</dimen>
+</resources>

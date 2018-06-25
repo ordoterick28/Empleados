@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MostrarInfoActivity"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Erick"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="erick@gmail.com"
+        android:gravity="left"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_nombre"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_domicilio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerezo 311, Campestre Villas de Alammo, Pachuca Hidalgo"
+        android:gravity="left"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/tv_email"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        />
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_domicilio"
+        />
+
+</RelativeLayout>

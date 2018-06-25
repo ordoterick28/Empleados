@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:background="#F67A58"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/btn_guardar"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+
+                <TextView
+                    android:id="@+id/tv_empleado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Empleado"
+                    android:layout_below="@+id/et_email"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#465059"
+                    android:textSize="@dimen/hdpi_activityMain_textSize"
+                    />
+
+                <EditText
+                    android:id="@+id/et_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:layout_marginLeft="@dimen/activityMain_margin_hdpi"
+                    android:layout_marginRight="@dimen/activityMain_margin_hdpi"
+                    android:textSize="@dimen/hdpi_activityMain_textSize"
+                    />
+
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:layout_below="@+id/et_nombre"
+                    android:layout_marginLeft="@dimen/activityMain_margin_hdpi"
+                    android:layout_marginRight="@dimen/activityMain_margin_hdpi"
+                    android:textSize="@dimen/hdpi_activityMain_textSize"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_domicilio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Domicilio"
+                    android:layout_below="@+id/et_email"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textColor="#465059"
+                    android:textSize="@dimen/hdpi_activityMain_textSize"
+                    />
+
+                <EditText
+                    android:id="@+id/et_calle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Calle"
+                    android:layout_below="@+id/et_calle"
+                    android:layout_marginLeft="@dimen/activityMain_margin_hdpi"
+                    android:layout_marginRight="@dimen/activityMain_margin_hdpi"
+                    android:textSize="@dimen/hdpi_activityMain_textSize"
+                    />
+
+                <EditText
+                    android:id="@+id/et_numExterior"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Num. Exterior"
+                    android:layout_below="@+id/et_calle"
+                    android:layout_marginLeft="@dimen/activityMain_margin_hdpi"
+                    android:layout_marginRight="@dimen/activityMain_margin_hdpi"
+                    android:textSize="@dimen/hdpi_activityMain_textSize"
+                    />
+
+
+                <EditText
+                    android:id="@+id/et_colonia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Colonia"
+                    android:layout_below="@+id/et_numInterior"
+                    android:layout_marginLeft="@dimen/activityMain_margin_hdpi"
+                    android:layout_marginRight="@dimen/activityMain_margin_hdpi"
+                    android:textSize="@dimen/hdpi_activityMain_textSize"
+                    />
+
+
+                <EditText
+                    android:id="@+id/et_municipio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Municipio"
+                    android:layout_below="@+id/et_colonia"
+                    android:layout_marginLeft="@dimen/activityMain_margin_hdpi"
+                    android:layout_marginRight="@dimen/activityMain_margin_hdpi"
+                    android:textSize="@dimen/hdpi_activityMain_textSize"
+                    />
+
+
+                <EditText
+                    android:id="@+id/et_estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Estado"
+                    android:layout_below="@+id/et_municipio"
+                    android:layout_marginLeft="@dimen/activityMain_margin_hdpi"
+                    android:layout_marginRight="@dimen/activityMain_margin_hdpi"
+                    android:textSize="@dimen/hdpi_activityMain_textSize"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="GUARDAR"
+            android:layout_marginLeft="4dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="guardar"
+            android:background="#F9E79F"
+            />
+
+    </RelativeLayout>
+</FrameLayout>
